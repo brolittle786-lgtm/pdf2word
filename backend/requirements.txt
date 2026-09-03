@@ -1,0 +1,7 @@
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+python-multipart==0.0.20
+pdf2docx==0.5.8
+PyMuPDF==1.26.4
+ocrmypdf==16.10.4
+pydantic-settings==2.10.1

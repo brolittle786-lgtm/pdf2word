@@ -4,6 +4,7 @@ import subprocess
 import tempfile
 import uuid
 from pathlib import Path
+from fastapi.middleware.cors import CORSMiddleware
 
 import fitz
 from fastapi import FastAPI, File, HTTPException, UploadFile
@@ -17,7 +18,7 @@ MAX_FILE_SIZE = int(os.getenv("MAX_FILE_SIZE_MB", "100")) * 1024 * 1024
 app = FastAPI(title=APP_NAME, version="1.0.0")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[os.getenv("FRONTEND_ORIGIN", "http://localhost:3000")],
+    allow_origins=["*"],
     allow_credentials=False,
     allow_methods=["GET", "POST"],
     allow_headers=["*"],

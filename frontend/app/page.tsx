@@ -116,8 +116,8 @@ export default function Home() {
         </div>
 
         <h1>
-          Turn PDFs into <em>editable Word</em> files.
-          <h1>Powered by OCR</h1>
+          Turn PDFs into <em>editable Word</em> files,
+          <h1>Powered by OCR.</h1>
         </h1>
 
         <p className="sub">
